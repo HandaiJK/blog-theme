@@ -4,6 +4,7 @@
 header#blog-title {
   padding: 0;
   background-color: $accent;
+  max-width: none;
 
   h1#title {
     font-family: "Titillium Web", $fontFamily;

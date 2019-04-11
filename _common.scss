@@ -1,4 +1,12 @@
+@import "variables";
+
 body {
   background-image: none;
   background-color: #e5e5e5;
+}
+
+.hatena-module-title {
+  font-family: $fontFamily;
+  font-size: 1.1rem;
+  color: $header;
 }
