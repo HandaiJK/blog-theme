@@ -9,66 +9,80 @@ body {
   font-family: -apple-system, Segoe UI, Helvetica Neue, Hiragino Kaku Gothic ProN, "メイリオ", meiryo, sans-serif;
   font-weight: normal;
   line-height: 1.4;
-  text-align: center;
   color: #707070;
   background-color: #fdfdfd; }
 
-body * {
-  text-align: left; }
+h1.entry-title {
+  line-height: 1;
+  font-family: -apple-system, Segoe UI, Helvetica Neue, Hiragino Kaku Gothic ProN, "メイリオ", meiryo, sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #464646; }
+  h1.entry-title a {
+    background-image: linear-gradient(#ffff00, #ffff00);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 6px;
+    position: relative;
+    color: #464646;
+    text-decoration: none; }
+    h1.entry-title a:hover {
+      color: #66e; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
   margin: 0;
   padding: 0;
   font-weight: bold;
   color: #464646; }
 
-h1 {
+.entry-content h1 {
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: 1.4rem; }
 
-h2 {
+.entry-content h2 {
   margin-top: 3rem;
   margin-bottom: 1rem;
   font-size: 1.2rem; }
 
-h3 {
+.entry-content h3 {
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-size: 1.1rem; }
 
-h4 {
+.entry-content h4 {
   margin-top: 1rem;
   margin-bottom: 0.25rem;
   font-size: 1.1rem; }
 
-h5 {
+.entry-content h5 {
   margin-top: 1rem;
   font-size: 1.1rem; }
 
-h6 {
+.entry-content h6 {
   margin-top: 1rem;
   font-size: 1.1rem; }
 
-p {
+.entry-content p {
   margin-top: 0;
   margin-bottom: 1.4rem; }
 
-a {
+.entry-content a {
   color: #66e;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: none; }
 
-a:active {
+.entry-content a:active {
   background-color: #eee;
   color: #555;
   text-decoration: none; }
 
-a:hover {
+.entry-content a:hover {
   background-image: linear-gradient(#66e, #66e);
   background-size: 0.1em 0.1em;
   background-repeat: repeat-x;
@@ -76,17 +90,17 @@ a:hover {
   background-position-x: 0;
   color: #66e; }
 
-b,
-strong {
+.entry-content b,
+.entry-content strong {
   font-weight: bolder; }
 
-em,
-i {
+.entry-content em,
+.entry-content i {
   font-style: italic; }
 
-del,
-s,
-strike {
+.entry-content del,
+.entry-content s,
+.entry-content strike {
   text-decoration: none;
   background-image: linear-gradient(#000, #000);
   background-size: 0.06em 0.06em;
@@ -94,39 +108,39 @@ strike {
   background-position-y: 65%;
   background-position-x: 0; }
 
-code,
-pre,
-samp,
-var {
+.entry-content code,
+.entry-content pre,
+.entry-content samp,
+.entry-content var {
   font-size: 95%;
   font-family: "Roboto Mono", monospace;
   font-weight: 300;
   color: #666; }
 
-pre {
+.entry-content pre {
   display: block;
   margin: 1rem -2rem;
   padding: 1rem 2rem;
   background-color: #eee;
   border-left: 0.1rem solid #888; }
 
-p code {
+.entry-content p code {
   padding: 0 0.2em 0.1em;
   background-color: #eee; }
 
-p var {
+.entry-content p var {
   padding: 0 0.2em 0.1em;
   background-color: #eee;
   font-weight: bolder;
   font-style: normal; }
 
-p samp {
+.entry-content p samp {
   padding: 0 0.2em 0.1em;
   margin: 0 0.1em;
   background-color: #666;
   color: #eee; }
 
-kbd {
+.entry-content kbd {
   position: relative;
   padding: 0.2em 0.2em 0.1em 0.2em;
   margin: 0 0.1em;
@@ -137,7 +151,7 @@ kbd {
   border-radius: 0.2em;
   border-bottom: 0.05em solid #aaa; }
 
-blockquote {
+.entry-content blockquote {
   margin: 1rem -2rem;
   padding: 1rem 2rem;
   background-color: #eee;
@@ -146,7 +160,7 @@ blockquote {
   font-style: italic;
   line-height: 1.5; }
 
-blockquote::before {
+.entry-content blockquote::before {
   content: "\201C";
   display: block;
   position: relative;
@@ -156,7 +170,7 @@ blockquote::before {
   font-size: 2em;
   color: #888; }
 
-blockquote::after {
+.entry-content blockquote::after {
   content: "\201D";
   display: inline-block;
   position: relative;
@@ -167,7 +181,7 @@ blockquote::after {
   line-height: 0;
   color: #888; }
 
-abbr[title] {
+.entry-content abbr[title] {
   text-decoration: none;
   background-image: linear-gradient(90deg, gray 50%, transparent 50%);
   background-size: 0.1em 0.06em;
@@ -176,14 +190,13 @@ abbr[title] {
   background-position-x: 0;
   font-feature-settings: "smcp"; }
 
-ul {
-  list-style: none;
-  margin-left: -1em; }
+.entry-content ul {
+  list-style: none; }
 
-ul > li {
+.entry-content ul > li {
   padding-left: 0; }
 
-ul > li::before {
+.entry-content ul > li::before {
   content: "»";
   display: block;
   position: relative;
@@ -194,7 +207,7 @@ ul > li::before {
   color: #888;
   text-align: right; }
 
-ul ul > li::before {
+.entry-content ul ul > li::before {
   content: "›";
   display: block;
   position: relative;
@@ -205,19 +218,19 @@ ul ul > li::before {
   color: #888;
   text-align: right; }
 
-ol {
+.entry-content ol {
   list-style: none;
   margin-left: -2em;
   padding-left: 2em; }
 
-ol > li {
+.entry-content ol > li {
   padding-left: 0;
   counter-increment: ol-count; }
 
-ol > li:first-child {
+.entry-content ol > li:first-child {
   counter-reset: ol-count; }
 
-ol > li::before {
+.entry-content ol > li::before {
   content: counter(ol-count) ".";
   display: block;
   position: relative;
@@ -228,45 +241,44 @@ ol > li::before {
   color: #888;
   text-align: right; }
 
-ol ol,
-ol ul,
-ul ol,
-ul ul {
+.entry-content ol ol,
+.entry-content ol ul,
+.entry-content ul ol,
+.entry-content ul ul {
   margin: 0.5em 0; }
 
-img {
+.entry-content img {
   display: block;
   width: calc(100% + 4rem);
   margin: 1rem -2rem; }
 
-figure {
+.entry-content figure {
   display: inline-table;
   margin: 0rem -2rem 1rem -2rem;
-  padding: 2rem 2rem;
-  background-color: #eee; }
+  padding: 2rem 2rem; }
 
-figure img {
+.entry-content figure img {
   display: inline-block;
   width: auto;
   max-width: 100%;
   margin: 0 auto; }
 
-figure img + img {
+.entry-content figure img + img {
   margin-left: 1rem; }
 
-figure figcaption {
+.entry-content figure figcaption {
   max-width: 100%;
   margin: 1rem auto -1rem auto;
   font-size: 0.9rem;
   font-style: italic; }
 
-table {
+.entry-content table {
   margin: 0 -1rem 1rem -1rem;
   width: calc(100% + 2rem);
   overflow: hidden;
   border-collapse: collapse; }
 
-table caption {
+.entry-content table caption {
   padding-top: 0.5rem;
   border-top: 1px solid #eee;
   caption-side: bottom;
@@ -274,54 +286,35 @@ table caption {
   font-style: italic;
   color: #666; }
 
-tr {
+.entry-content tr {
   transition: 0.15s; }
 
-thead tr {
+.entry-content thead tr {
   border-bottom: 2px solid #888; }
 
-tfoot tr {
+.entry-content tfoot tr {
   border-bottom: none;
   border-top: 1px solid #eee;
   font-weight: bolder; }
 
-tbody tr:hover,
-tfoot tr:hover {
+.entry-content tbody tr:hover,
+.entry-content tfoot tr:hover {
   background-color: #eee; }
 
-td,
-th {
+.entry-content td,
+.entry-content th {
   position: relative;
   padding: 0.3rem 1rem; }
 
-th {
+.entry-content th {
   font-weight: bolder; }
 
-tbody tr:first-of-type td,
-tbody tr:first-of-type th {
+.entry-content tbody tr:first-of-type td,
+.entry-content tbody tr:first-of-type th {
   padding-top: 0.5rem; }
 
-hr {
+.entry-content hr {
   height: 0;
-  width: 10rem;
   border: 0;
   border-bottom: 1px solid black;
   margin: 2rem auto; }
-
-header h1 a {
-  background-image: linear-gradient(#ffff00, #ffff00);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 100% 6px;
-  position: relative;
-  color: #464646; }
-  header h1 a:after {
-    content: "";
-    text-decoration: none;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 100%;
-    height: 5px; }
-  header h1 a:hover {
-    background: none; }
