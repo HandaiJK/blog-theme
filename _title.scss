@@ -1,0 +1,21 @@
+@import "variables";
+@import "font";
+
+header#blog-title {
+  padding: 0;
+  background-color: $accent;
+
+  h1#title {
+    font-family: "Titillium Web", $fontFamily;
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 0.8rem 0;
+    margin-left: 18px;
+    font-weight: 300;
+    color: $header;
+  }
+
+  h2#blog-description {
+    display: none;
+  }
+}

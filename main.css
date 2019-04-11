@@ -1,9 +1,27 @@
 @charset "UTF-8";
 @import "https://fonts.googleapis.com/css?family=Fira+Sans:301,300i,400,400i,500,500i,700,700i&subset=latin-ext";
 @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css";
+@import "https://fonts.googleapis.com/css?family=Titillium+Web:300";
+@import "https://fonts.googleapis.com/css?family=Fira+Sans:301,300i,400,400i,500,500i,700,700i&subset=latin-ext";
+@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css";
+@import "https://fonts.googleapis.com/css?family=Titillium+Web:300";
 body {
   background-image: none;
   background-color: #e5e5e5; }
+
+header#blog-title {
+  padding: 0;
+  background-color: #ffff00; }
+  header#blog-title h1#title {
+    font-family: "Titillium Web", -apple-system, Segoe UI, Helvetica Neue, Hiragino Kaku Gothic ProN, "メイリオ", meiryo, sans-serif;
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 0.8rem 0;
+    margin-left: 18px;
+    font-weight: 300;
+    color: #464646; }
+  header#blog-title h2#blog-description {
+    display: none; }
 
 :root {
   font-size: 16px; }

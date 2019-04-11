@@ -1,15 +1,8 @@
 @import "common";
+@import "variables";
+@import "font";
 
-@import "https://fonts.googleapis.com/css?family=Fira+Sans:301,300i,400,400i,500,500i,700,700i&subset=latin-ext";
-@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css";
-
-$header: #464646;
-$text-primary: #707070;
-$background: #fdfdfd;
-$link: #66e;
-$accent: #ffff00;
-$fontFamily: -apple-system, Segoe UI, Helvetica Neue, Hiragino Kaku Gothic ProN,
-  "メイリオ", meiryo, sans-serif;
+@import "title";
 
 :root {
   font-size: 16px;
