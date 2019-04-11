@@ -12,8 +12,6 @@ $accent: #ffff00;
 }
 
 body {
-  /* TEXT PARENT */
-  width: 35em;
   margin: 0 auto;
   font-family: -apple-system, Segoe UI, Helvetica Neue,
     Hiragino Kaku Gothic ProN, "メイリオ", meiryo, sans-serif;
@@ -82,7 +80,6 @@ p {
 a {
   color: $link;
   text-decoration: none;
-  // transition: 0.15s;
 }
 
 a:active {
@@ -371,13 +368,20 @@ hr {
 }
 
 header h1 a {
+  background-image: linear-gradient($accent, $accent);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 6px;
   &:after {
     content: "";
+    text-decoration: none;
+    // transition: background-size .3s;
+
     position: absolute;
-    background-image: linear-gradient($accent, $accent);
-    background-repeat: repeat-x;
-    background-position-y: 93%;
-    background-position-x: 0;
+    // background-image: linear-gradient($accent, $accent);
+    // background-repeat: repeat-x;
+    // background-position-y: 93%;
+    // background-position-x: 0;
     left: 0;
     bottom: -5px;
     width: 100%;
@@ -385,4 +389,9 @@ header h1 a {
   }
   position: relative;
   color: $header;
+
+  &:hover {
+    background: none;
+    // text-decoration: none;
+  }
 }
